@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  font-family: 'Exo 2', sans-serif;
+}
+
+html {
+ 
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+#home {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(76.34deg, #FFFFFF 52.45%, rgba(196, 196, 196, 0) 52.49%), url(../images/back1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; animation: background 10s alternate infinite;
+}
+@keyframes  background{
+    0%,100%{
+         background: linear-gradient(76.34deg, #FFFFFF 52.45%, rgba(196, 196, 196, 0) 52.49%), url(../images/back1.jpg) no-repeat;
+        background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+        
+    }
+    25%{
+         background: linear-gradient(76.34deg, #FFFFFF 52.45%, rgba(196, 196, 196, 0) 52.49%), url(../images/back2.jpg) no-repeat;
+        background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+    }
+    50%{
+         background: linear-gradient(76.34deg, #FFFFFF 52.45%, rgba(196, 196, 196, 0) 52.49%), url(../images/back3.jpg) no-repeat;
+        background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+    }
+    75%{
+         background: linear-gradient(76.34deg, #FFFFFF 52.45%, rgba(196, 196, 196, 0) 52.49%), url(../images/back4.jpg) no-repeat;
+        background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+    }
+}
+#home.content{
+    position:relative
+}
+#home .content h1 {
+  font-size: 6rem;
+  color: tomato;
+}
+
+#home .content h2 {
+  font-size: 5rem;
+  color: tomato;
+}
+
+#home .content h3 {
+  font-size: 3rem;
+  color: #333;
+  margin: 1rem 0;
+}
+#home .content button {
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  background: tomato;
+  color: #fff;
+  cursor: pointer;
+  height: 4rem;
+  width: 18rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+#home .content button:hover {
+  background: #333;
+}
+#home .icons{
+    margin-top: 1.5rem;width:::!00%;
+}
+#home .icons a{
+    margin: 1.3rem;
+    font-size:1.8rem;
+    text-decoration: none;
+    color: #fff;
+    width:3rem;
+    height: 3rem;
+    border-radius: 50%;
+    line-height: 1.8;
+    background: tomato;
+    text-align: center;
+}
+#home .icons a:hover{
+    background: #333;
+    transform: rotate(360deg);
+}
+#course{
+    display: grid;place-items:center;
+    min-height: 100vh;
+    width:100vw;
+}
+.heading{
+    text-align: center;font-size:3rem;
+    position: relative
+}
+.heading::after{
+    position: absolute;
+    content:'';
+    width:15rem;height: 0.5rem;background: #333;bottom:-1rem;transform: translateX(-120%);
+}         
+#course .box-container{
+    display: flex;align-items: center;
+    justify-content: center;width:90%;flex-wrap:wrap;
+}
+#course .box-container .box{height: 25rem;
+  width: 20rem;padding:1.5rem; 
+  border-radius: .5rem;
+  -webkit-box-shadow: 0 0 .3rem #333;
+          box-shadow: 0 0 .3rem #333;
+  margin: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+    background: #333;
+ 
+          align-items: center;
+  
+          justify-content: center;
+  
+     
+          flex-flow: column;
+  cursor: pointer;
+  overflow: hidden;
+}
+#course .box-container .box img{
+    width:45%;object-fit:cover;height: 45%;transform: translateY(5rem);
+}
+#course .box-container .box p{
+    text-align: center;font-size:1.3rem;transform: translateY(12rem);opacity: 0;color:#fff;
+}
+#course .box-container .box:hover p{
+    opacity: 1;
+    transform: translateY(0);
+}
+#course .box-container .box:hover img{
+    height: 25%;width: 25%;transform: translateY(-2rem);
+}
+#service{
+    display: grid;
+    place-items:center;min-height: 100vh;widows: 100vw;background: tomato;
+}
+#service .box-container{  width: 90%;
+    
+}
+#service .box-container .box{
+    display: flex;align-items: center;justify-content: space-around;max-width: 60rem;background: #fff;margin: 2rem;padding: 1.2rem;
+    clear: both;
+    
+}
+#service .box-container .box img{
+    height: 10rem;
+}
+#service .box-container .box .info{
+    border-left:.5rem solid tomato;
+    padding: 1.5rem;
+}
+#service .box-container .box .info h2{
+    font-size:1.2rem;
+}
+#service .box-container .box .info p{
+    padding: .5rem;font-size: .8rem;
+}
+#service .box-container .box:nth-child(3){
+    float: right;
+}
+
+#testimonial {
+  
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background: #333;
+}
+#testimonial .box-container {
+  width: 90%;
+}
+
+#testimonial .box-container .box {
+  max-width: 60rem;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  
+          align-items: center;
+  
+      justify-content: space-around;
+  margin: 2rem;
+  margin-left: 5rem;
+  padding-left: 6rem;
+  position: relative;
+  clear: both;
+}
+
+#testimonial .box-container .box img {
+  position: absolute;
+  top: 50%;
+  left: -9%;
+  
+          transform: translateY(-50%);
+  height: 10rem;
+  width: 10rem;
+  border-radius: 10rem;
+  border: 0.5rem solid tomato;
+  
+         
+  
+     object-fit: cover;
+}
+#testimonial .box-container .box .info h2 {
+  margin-top: -2.5rem;
+  margin: 2rem;
+  color: tomato;
+  text-align: right;
+}
+
+#testimonial .box-container .box .info p {
+  font-size: 1.6rem;
+  padding: 2rem;
+  color: #333;
+}
+
+#testimonial .box-container .box .info p i {
+  padding: 1rem;
+  color: tomato;
+}
+
+#testimonial .box-container .box:nth-child(even) {
+  float: right;
+}
+#contact{
+    display: grid;place-items:center;
+    background: linear-gradient(tomato, tomato), url(../images/contact-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: screen;
+}
+#contact form {
+  background: #fff;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: .5rem;
+  
+          box-shadow: 0 0 1rem #333;
+}
+#testimonial .heading{
+    color:#fff;
+}
+#testimonial .heading::after{
+    background: #fff;
+}
+#contact form .inputBox {
+  text-align: center;
+  position: relative;
+}
+
+#contact form .inputBox input, #contact form .inputBox textarea {
+  outline: none;
+  padding: 0 1rem;
+  height: 4rem;
+  width: 90%;
+  border-radius: .5rem;
+  border: .2rem solid #333;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 2rem 0;
+}
+
+#contact form .inputBox input:focus ~ h3,
+#contact form .inputBox input:valid ~ h3, #contact form .inputBox textarea:focus ~ h3,
+#contact form .inputBox textarea:valid ~ h3 {
+  top: -1rem;
+  left: 5.9%;
+  color: #ff3300;
+}
+
+#contact form .inputBox input:focus, #contact form .inputBox textarea:focus {
+  border-color: tomato;
+}
+
+#contact form .inputBox textarea {
+  resize: none;
+  padding: 1rem;
+  height: 20rem;
+}
+
+#contact form .inputBox input[type="submit"] {
+  border: none;
+  background: tomato;
+  color: #fff;
+}
+
+#contact form .inputBox input[type="submit"]:hover {
+  background: #333;
+}
+
+#contact form .inputBox h3 {
+  position: absolute;
+  top: 3rem;
+  left: 8%;
+}
+
+#footer {
+  width: 100%;
+  background: #333;
+}
+
+#footer h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 1.1rem;
+  padding:1rem;
+  margin: 0;
+}
+
+#footer h1 span {
+  color: tomato;
+}
